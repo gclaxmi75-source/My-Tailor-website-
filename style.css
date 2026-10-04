@@ -68,9 +68,9 @@ h2 { font-size: 2rem; margin-bottom: 1.5rem; }
   aspect-ratio: 4 / 5; background-color: var(--soft);
   background-size: cover; background-repeat: no-repeat;
 }
-.photo.front { background-image: url("images/shop-front.jpg"); background-position: 50% 40%; }
-.photo.clothes { background-image: url("images/clothes.jpg"); background-position: 50% 35%; }
-.photo.workroom { background-image: url("images/workroom.jpg"); background-position: 70% 55%; }
+.photo.front { background-image: url("shop-front.jpg"); background-position: 50% 40%; }
+.photo.clothes { background-image: url("clothes.jpg"); background-position: 50% 35%; }
+.photo.workroom { background-image: url("workroom.jpg"); background-position: 70% 55%; }
 figcaption { margin-top: 0.5rem; font-size: 0.95rem; }
 
 /* contact */
