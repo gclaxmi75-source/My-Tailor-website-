@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>लक्ष्मी टेलर | Laxmi Tailor, गैंडाकोट</title>
+<meta name="description" content="लक्ष्मी टेलर (Laxmi Tailor), प्रगति टोल, गैंडाकोट-१, नवलपुर। महिलाका लागि कुर्ता, सारी र ब्लाउज सिलाइ। Women's tailoring, open every day 7 am to 7 pm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Serif:wght@600;800&family=Noto+Serif+Devanagari:wght@600;800&display=swap" rel="stylesheet">
+
+<!-- Helps Google understand the shop. Update if anything changes. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TailorShop",
+  "name": "Laxmi Tailor",
+  "telephone": "+9779768014357",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Pargati Toll, Gaindakot 1",
+    "addressLocality": "Nawalpur",
+    "addressCountry": "NP"
+  },
+  "openingHours": "Mo-Su 07:00-19:00"
+}
+</script>
+
+<style>
+  :root {
+    --white: #ffffff;
+    --ink: #111111;
+    --grey: #5c5c5c;
+    --line: #e4e4e4;
+    --soft: #f4f4f4;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Noto Sans", "Noto Sans Devanagari", sans-serif;
+    color: var(--ink);
+    background: var(--white);
+    line-height: 1.8;
+    font-size: 1.05rem;
+    padding-bottom: 3.2rem;
+  }
+  h1, h2, .logo {
+    font-family: "Noto Serif", "Noto Serif Devanagari", serif;
+    line-height: 1.3;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+
+  .wrap { max-width: 1050px; margin: 0 auto; padding: 0 1.25rem; }
+
+  /* English sits under the Nepali everywhere, in grey */
+  .en { color: var(--grey); }
+  .sub { display: block; font-size: 0.55em; font-weight: 600; color: var(--grey); }
+
+  header { border-bottom: 1px solid var(--line); }
+  header .wrap {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 1rem; padding-bottom: 1rem;
+  }
+  .logo { font-weight: 800; font-size: 1.25rem; text-decoration: none; }
+  nav { display: none; }
+  nav a { margin-left: 1.5rem; text-decoration: none; color: var(--grey); }
+  nav a:hover { color: var(--ink); }
+
+  /* hero */
+  .hero { padding: 4rem 0; }
+  .hero h1 { font-size: clamp(3rem, 12vw, 6rem); font-weight: 800; letter-spacing: -0.01em; }
+  .hero h1 .sub { font-size: 0.4em; font-weight: 600; letter-spacing: 0; }
+  .hero p { max-width: 34rem; margin-top: 1rem; font-size: 1.15rem; }
+  .hero .buttons { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+
+  .btn {
+    display: inline-block; background: var(--ink); color: var(--white);
+    padding: 0.8rem 1.8rem; border: 2px solid var(--ink); border-radius: 0;
+    font: inherit; font-weight: 600; text-decoration: none; cursor: pointer;
+  }
+  .btn:hover { background: var(--white); color: var(--ink); }
+  .btn.plain { background: var(--white); color: var(--ink); }
+  .btn.plain:hover { background: var(--ink); color: var(--white); }
+
+  section { padding: 4rem 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+
+  .about p + p { margin-top: 1rem; }
+  .about p { max-width: 40rem; }
+
+  /* gallery: the photos are set at the very bottom of this file */
+  .gallery { display: grid; gap: 1.5rem; }
+  .photo {
+    aspect-ratio: 4 / 5; background-color: var(--soft);
+    background-size: cover; background-repeat: no-repeat;
+  }
+  .photo.front { background-image: var(--img-front); background-position: 50% 40%; }
+  .photo.clothes { background-image: var(--img-clothes); background-position: 50% 35%; }
+  .photo.workroom { background-image: var(--img-workroom); background-position: 70% 55%; }
+  figcaption { margin-top: 0.5rem; font-size: 0.95rem; }
+
+  /* contact */
+  .contact .wrap { display: grid; gap: 3rem; }
+  form { display: grid; gap: 1rem; }
+  label { display: grid; gap: 0.3rem; font-weight: 600; }
+  input, textarea {
+    font: inherit; font-weight: 400; padding: 0.7rem; border: 2px solid var(--ink);
+    border-radius: 0; background: var(--white); color: var(--ink);
+  }
+  textarea { min-height: 7rem; resize: vertical; }
+  #status { min-height: 1.5rem; }
+  .info p { margin-bottom: 1rem; }
+  .info strong { display: block; }
+
+  footer { border-top: 1px solid var(--line); padding: 1.5rem 0; color: var(--grey); font-size: 0.95rem; }
+
+  /* sticky call bar so the phone is always one tap away on mobile */
+  .callbar {
+    position: fixed; bottom: 0; left: 0; right: 0; text-align: center;
+    background: var(--ink); color: var(--white); padding: 0.9rem;
+    font-weight: 600; text-decoration: none; z-index: 10;
+  }
+
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; }
+    nav { display: block; }
+    .gallery { grid-template-columns: repeat(3, 1fr); }
+    .contact .wrap { grid-template-columns: 1.2fr 1fr; }
+    .callbar { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">लक्ष्मी टेलर</a>
+    <nav>
+      <a href="#kaam">हाम्रो काम / <span lang="en">Our work</span></a>
+      <a href="#sampark">सम्पर्क / <span lang="en">Contact</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>लक्ष्मी टेलर <span class="sub" lang="en">Laxmi Tailor</span></h1>
+      <p>महिलाका लागि कुर्ता, सारी र ब्लाउज। तपाईंको नापमा, तपाईंकै डिजाइनमा।</p>
+      <p class="en" lang="en">Kurtas, saris and blouses for women. Made to your measure, in your own design.</p>
+      <div class="buttons">
+        <a class="btn" href="tel:+9779768014357">फोन गर्नुहोस् / <span lang="en">Call now</span></a>
+        <a class="btn plain" href="#sampark">सन्देश पठाउनुहोस् / <span lang="en">Send a message</span></a>
+      </div>
+    </div>
+  </div>
+
+  <section id="kaam">
+    <div class="wrap">
+      <h2>हाम्रो काम <span class="sub" lang="en">Our work</span></h2>
+      <div class="gallery">
+        <figure>
+          <div class="photo front" role="img" aria-label="लक्ष्मी टेलरको पसलको भवन / Laxmi Tailor shop building"></div>
+          <figcaption>पसलको भवन / <span lang="en">The shop building</span></figcaption>
+        </figure>
+        <figure>
+          <div class="photo clothes" role="img" aria-label="सिलाएका लुगा र कपडा / Stitched clothes and fabrics"></div>
+          <figcaption>सिलाएका लुगा र कपडा / <span lang="en">Stitched clothes and fabrics</span></figcaption>
+        </figure>
+        <figure>
+          <div class="photo workroom" role="img" aria-label="काम हुने कोठा / The room where the work happens"></div>
+          <figcaption>काम हुने कोठा / <span lang="en">The room where the work happens</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrap">
+      <h2>हाम्रो बारेमा <span class="sub" lang="en">About us</span></h2>
+      <p>लक्ष्मी टेलरमा महिलाका लुगा मात्र सिलाइन्छ। पसल चलाउने सञ्चालिकालाई टेलरिङ र कपडाको काममा ७ देखि ८ वर्षको अनुभव छ। पसलमा केही कपडाका विकल्प तयार छन्, र चाहनुभयो भने आफ्नै डिजाइन भनेर सिलाउन पनि सकिन्छ। मूल्य सस्तो र भरपर्दो छ।</p>
+      <p class="en" lang="en">Laxmi Tailor stitches clothes for women only. The shop is run by a woman with 7 to 8 years of experience in tailoring and clothing. A few fabric options are ready in the shop, and you can bring your own design and have it stitched. Our prices are low and dependable.</p>
+    </div>
+  </section>
+
+  <section id="sampark" class="contact">
+    <div class="wrap">
+      <div>
+        <h2>सम्पर्क <span class="sub" lang="en">Contact</span></h2>
+        <form id="form">
+          <!-- get a free key at web3forms.com and paste it here -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="Laxmi Tailor website: new message">
+          <label>
+            <span>नाम / <span lang="en">Name</span></span>
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label>
+            <span>फोन नम्बर / <span lang="en">Phone number</span></span>
+            <input type="tel" name="phone" required autocomplete="tel">
+          </label>
+          <label>
+            <span>कस्तो लुगा चाहिएको हो? / <span lang="en">What would you like stitched?</span></span>
+            <textarea name="message" required></textarea>
+          </label>
+          <button class="btn" type="submit">सन्देश पठाउनुहोस् / <span lang="en">Send message</span></button>
+          <p id="status" role="status"></p>
+        </form>
+      </div>
+
+      <div class="info">
+        <h2>पसल <span class="sub" lang="en">Visit the shop</span></h2>
+        <p>
+          <strong>ठेगाना / <span lang="en">Address</span></strong>
+          प्रगति टोल, गैंडाकोट-१, नवलपुर, नेपाल<br>
+          <span class="en" lang="en">Pargati Toll, Gaindakot 1, Nawalpur, Nepal</span>
+        </p>
+        <p>
+          <strong>खुला समय / <span lang="en">Opening hours</span></strong>
+          हरेक दिन, बिहान ७ बजे देखि साँझ ७ बजे सम्म<br>
+          <span class="en" lang="en">Every day, 7 am to 7 pm</span>
+        </p>
+        <p>
+          <strong>फोन / <span lang="en">Phone</span></strong>
+          <a href="tel:+9779768014357">976-8014357</a>
+        </p>
+        <!-- the shop's Google Maps link -->
+        <a class="btn" href="https://maps.app.goo.gl/Tpzr5CMyG9C7rKjZA" target="_blank" rel="noopener">गुगल म्यापमा हेर्नुहोस् / <span lang="en">View on Google Maps</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© लक्ष्मी टेलर, गैंडाकोट / <span lang="en">Laxmi Tailor, Gaindakot</span></div>
+</footer>
+
+<a class="callbar" href="tel:+9779768014357">फोन गर्नुहोस् / <span lang="en">Call</span>: 976-8014357</a>
+
+<script>
+  const form = document.getElementById("form");
+  const status = document.getElementById("status");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    status.textContent = "पठाउँदै... / Sending...";
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: new FormData(form)
+      });
+      const data = await res.json();
+      if (!data.success) throw new Error("not sent");
+      status.textContent = "सन्देश पठाइयो। हामी चाँडै फोन गर्छौं। / Message sent. We will call you soon.";
+      form.reset();
+    } catch (err) {
+      status.textContent = "सन्देश जान सकेन, कृपया फोन गर्नुहोस्: 976-8014357 / It did not go through, please call: 976-8014357";
+    }
+  });
+</script>
+
+<!-- The three photos live here, embedded, so index.html works on its own with no images folder. -->
+<style>
+:root {
+  --img-front: url(data:image/jpeg;base64,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
